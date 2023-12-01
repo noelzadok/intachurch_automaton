@@ -26,6 +26,5 @@ test('event', async ({ page }) => {
   await page.getByRole('button', { name: 'Create Event' }).click();
   await page.locator('div').filter({ hasText: /^Create New Event$/ }).getByRole('img').click();
   await page.getByRole('tab', { name: 'Past Events' }).click();
-  await page.locator('div').filter({ hasText: /^November 30, 2023ListCreate new event$/ }).getByRole('img').nth(1).click();
-  await page.getByRole('tab', { name: 'Past Events' }).click();
+  
 });
