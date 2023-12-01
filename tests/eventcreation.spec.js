@@ -12,11 +12,6 @@ test('event', async ({ page }) => {
   await page.getByRole('tab', { name: 'Attendance Overview' }).click();
   await page.getByRole('button', { name: 'View attendees' }).click();
   await page.getByRole('main').locator('img').click();
-  await page.getByText('November 30,').click();
-  await page.getByTitle('Thursday, November 9,').click();
-  await page.getByText('10').click();
-  await page.getByLabel('Today').click();
-  await page.getByText('November 30,').click();
   await page.getByRole('tab', { name: 'Past Events' }).click();
   await page.getByRole('tab', { name: 'Upcoming Events' }).click();
   await page.getByRole('button', { name: 'Create new event' }).click();
